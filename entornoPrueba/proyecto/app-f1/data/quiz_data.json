@@ -1,0 +1,5 @@
+[
+    {"question": "Lewis Hamilton ha ganado 7 campeonatos de F1.", "answer": true},
+    {"question": "La escudería Red Bull es alemana.", "answer": false},
+    {"question": "Max Verstappen ganó el campeonato en 2023.", "answer": true}
+]

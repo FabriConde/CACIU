@@ -1,0 +1,28 @@
+{
+    "": "",
+    "fabri": {
+        "password": "c814d705d4455122c2ec68bf7ff7f47062971a872f699bb3bfe86cd0c8ba98c8",
+        "salt": "48c6910f4ed6ce432726d2f28a8124e9",
+        "edad": 28,
+        "nivel": "Intermedio",
+        "equipo_favorito": "Aston Martin",
+        "piloto_favorito": "Fernando Alonso",
+        "historial_quiz": [
+            {
+                "puntos": 2,
+                "total": 3,
+                "fecha": "2025-06-07 12:13:55"
+            },
+            {
+                "puntos": 2,
+                "total": 3,
+                "fecha": "2025-06-07 12:13:58"
+            },
+            {
+                "puntos": 3,
+                "total": 3,
+                "fecha": "2025-06-07 12:14:05"
+            }
+        ]
+    }
+}
