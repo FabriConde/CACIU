@@ -3,15 +3,16 @@ from app.login_page import LoginPage
 from app.session_manager import SessionManager
 from app.main_page import MainPage
 
-ctk.set_appearance_mode("dark")
-ctk.set_default_color_theme("blue")
+ctk.set_appearance_mode("light")
+ctk.set_default_color_theme("dark-blue")
 
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
         self.title("F1 REALIDAD AUMENTADA")
-        self.geometry("900x600")
+        self.geometry("800x400")
         self.resizable(False, False)
+        self.configure(fg_color="white")  # <-- Fondo blanco para toda la ventana
         self._frame = None
 
         usuario_guardado = SessionManager.load_session()

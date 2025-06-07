@@ -1,14 +1,16 @@
 import customtkinter as ctk
+from app.base_page import BasePage
 
-class MainPage(ctk.CTkFrame):
+class MainPage(BasePage):
     def __init__(self, master, username):
         super().__init__(master)
         self.master = master
         self.username = username
-        ctk.CTkLabel(self, text="Bienvenido a F1 AR", font=("Arial", 24)).pack(pady=20)
-        ctk.CTkButton(self, text="Realidad Aumentada", command=self.launch_ar).pack(pady=10)
-        ctk.CTkButton(self, text="Quiz F1", command=self.open_quiz).pack(pady=10)
-        ctk.CTkButton(self, text="Puntuación Quiz", command=self.open_scoreQuiz).pack(pady=10)
+
+        ctk.CTkLabel(self.content, text="Bienvenido a F1 AR", font=("Arial", 24)).pack(pady=20)
+        ctk.CTkButton(self.content, text="Realidad Aumentada", command=self.launch_ar).pack(pady=10)
+        ctk.CTkButton(self.content, text="Quiz F1", command=self.open_quiz).pack(pady=10)
+        ctk.CTkButton(self.content, text="Puntuación Quiz", command=self.open_scoreQuiz).pack(pady=10)
 
     def launch_ar(self):
         print("Aquí irá la lógica de RA con OpenCV")

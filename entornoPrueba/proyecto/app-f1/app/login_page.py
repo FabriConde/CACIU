@@ -3,18 +3,19 @@ from app.main_page import MainPage
 from app.session_manager import SessionManager
 from app.register_page import RegisterPage
 from app.recognition_login_page import RecognitionLoginPage
+from app.base_page import BasePage
 
-class LoginPage(ctk.CTkFrame):
+class LoginPage(BasePage):
     def __init__(self, master):
         super().__init__(master)
         self.master = master
 
-        self.username_entry = ctk.CTkEntry(self, placeholder_text="Usuario")
-        self.password_entry = ctk.CTkEntry(self, placeholder_text="Contraseña", show="*")
-        self.login_btn = ctk.CTkButton(self, text="Iniciar sesión", command=self.login)
-        self.register_btn = ctk.CTkButton(self, text="Registrarse", command=self.go_to_register)
-        self.recognition_btn = ctk.CTkButton(self, text="Reconocimiento facial", command=self.go_to_recognition)
-        self.message_label = ctk.CTkLabel(self, text="", text_color="red")
+        self.username_entry = ctk.CTkEntry(self.content, placeholder_text="Usuario")
+        self.password_entry = ctk.CTkEntry(self.content, placeholder_text="Contraseña", show="*")
+        self.login_btn = ctk.CTkButton(self.content, text="Iniciar sesión", command=self.login, fg_color="#1abc9c", hover_color="#16a085")
+        self.register_btn = ctk.CTkButton(self.content, text="Registrarse", command=self.go_to_register)
+        self.recognition_btn = ctk.CTkButton(self.content, text="Reconocimiento facial", command=self.go_to_recognition)
+        self.message_label = ctk.CTkLabel(self.content, text="", text_color="red")
 
         self.username_entry.pack(pady=10)
         self.password_entry.pack(pady=10)
@@ -35,7 +36,6 @@ class LoginPage(ctk.CTkFrame):
             self.master.switch_frame(MainPage, user)
         else:
             self.message_label.configure(text="Usuario o contraseña incorrectos.", text_color="red")
-
 
     def go_to_register(self):
         self.master.switch_frame(RegisterPage)

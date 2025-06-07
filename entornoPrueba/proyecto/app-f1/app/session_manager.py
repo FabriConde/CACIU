@@ -13,7 +13,10 @@ class SessionManager:
         if not os.path.exists(cls.path):
             return {}
         with open(cls.path, "r") as f:
-            return json.load(f)
+            try:
+                return json.load(f)
+            except json.JSONDecodeError:
+                return {}
 
     @classmethod
     def save_users(cls, users):
@@ -79,7 +82,10 @@ class SessionManager:
         if not os.path.exists(cls.SESSION_PATH):
             return None
         with open(cls.SESSION_PATH, "r") as f:
-            session_data = json.load(f)
+            try:
+                session_data = json.load(f)
+            except json.JSONDecodeError:
+                return None
         timestamp = session_data.get("timestamp", 0)
         now = datetime.datetime.now().timestamp()
         # 5 minutos = 300 segundos
