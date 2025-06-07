@@ -11,8 +11,27 @@ class RegisterPage(ctk.CTkFrame):
         self.age_entry = ctk.CTkEntry(self, placeholder_text="Edad")
         self.level_option = ctk.CTkOptionMenu(self, values=["Principiante", "Intermedio", "Avanzado", "Experto"])
         self.level_option.set("Principiante")
-        self.team_entry = ctk.CTkEntry(self, placeholder_text="Equipo favorito")
-        self.driver_entry = ctk.CTkEntry(self, placeholder_text="Piloto favorito")
+        self.team_option = ctk.CTkOptionMenu(
+            self,
+            values=[
+                "Red Bull", "Mercedes", "Aston Martin", "Ferrari", "Alpine", "McLaren",
+                "Alfa Romeo", "AlphaTauri", "Williams", "Haas", "Renault", "Sauber",
+                "Force India", "Racing Point", "Toyota (WEC)", "Minardi", "Audi"
+            ]
+        )
+        self.team_option.set("Red Bull")
+        self.driver_option = ctk.CTkOptionMenu(
+            self,
+            values=[
+                "Max Verstappen", "Lewis Hamilton", "Nico Rosberg", "Sebastian Vettel",
+                "Charles Leclerc", "Fernando Alonso", "George Russell", "Daniel Ricciardo",
+                "Kimi Räikkönen", "Pierre Gasly", "Carlos Sainz", "Valtteri Bottas",
+                "Lando Norris", "Alexander Albon", "Romain Grosjean", "Logan Sargeant",
+                "Oscar Piastri", "Mick Schumacher", "Jenson Button", "Yuki Tsunoda",
+                "Esteban Ocon", "Nico Hülkenberg", "Lance Stroll"
+            ]
+        )
+        self.driver_option.set("Max Verstappen")
 
         self.register_btn = ctk.CTkButton(self, text="Registrar", command=self.register)
         self.back_btn = ctk.CTkButton(self, text="Volver", command=self.go_back)
@@ -22,8 +41,8 @@ class RegisterPage(ctk.CTkFrame):
         self.password_entry.pack(pady=5)
         self.age_entry.pack(pady=5)
         self.level_option.pack(pady=5)
-        self.team_entry.pack(pady=5)
-        self.driver_entry.pack(pady=5)
+        self.team_option.pack(pady=5)
+        self.driver_option.pack(pady=5)
         self.register_btn.pack(pady=10)
         self.back_btn.pack(pady=5)
         self.message_label.pack(pady=5)
@@ -33,8 +52,8 @@ class RegisterPage(ctk.CTkFrame):
         pwd = self.password_entry.get().strip()
         age = self.age_entry.get().strip()
         level = self.level_option.get()
-        team = self.team_entry.get().strip()
-        driver = self.driver_entry.get().strip()
+        team = self.team_option.get()
+        driver = self.driver_option.get()
 
         if not user or not pwd or not age or not team or not driver:
             self.message_label.configure(text="Por favor, completa todos los campos.", text_color="red")

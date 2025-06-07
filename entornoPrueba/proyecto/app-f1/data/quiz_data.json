@@ -1,5 +1,625 @@
 [
-    {"question": "Lewis Hamilton ha ganado 7 campeonatos de F1.", "answer": true},
-    {"question": "La escudería Red Bull es alemana.", "answer": false},
-    {"question": "Max Verstappen ganó el campeonato en 2023.", "answer": true}
+  {
+    "question": "¿Max Verstappen ganó el campeonato de F1 en 2021?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Red Bull",
+    "piloto": "Max Verstappen"
+  },
+  {
+    "question": "¿Lewis Hamilton ganó el campeonato de F1 en 2016?",
+    "answer": false,
+    "nivel": "intermedio",
+    "equipo": "Mercedes",
+    "piloto": "Lewis Hamilton"
+  },
+  {
+    "question": "¿Nico Rosberg se retiró después de ganar su primer título en 2016?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Mercedes",
+    "piloto": "Nico Rosberg"
+  },
+  {
+    "question": "¿Sebastian Vettel corrió para Aston Martin en 2022?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Aston Martin",
+    "piloto": "Sebastian Vettel"
+  },
+  {
+    "question": "¿Charles Leclerc ha ganado el campeonato mundial de F1?",
+    "answer": false,
+    "nivel": "intermedio",
+    "equipo": "Ferrari",
+    "piloto": "Charles Leclerc"
+  },
+  {
+    "question": "¿Fernando Alonso regresó a la F1 con el equipo Alpine en 2021?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Alpine",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿George Russell reemplazó a Lewis Hamilton en el GP de Sakhir 2020?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Mercedes",
+    "piloto": "George Russell"
+  },
+  {
+    "question": "¿Daniel Ricciardo ganó una carrera con McLaren en 2021?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Daniel Ricciardo"
+  },
+  {
+    "question": "¿Ferrari ganó el campeonato de constructores en 2022?",
+    "answer": false,
+    "nivel": "intermedio",
+    "equipo": "Ferrari",
+    "piloto": "Charles Leclerc"
+  },
+  {
+    "question": "¿Kimi Räikkönen se retiró de la F1 en 2021?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Alfa Romeo",
+    "piloto": "Kimi Räikkönen"
+  },
+  {
+    "question": "¿Red Bull ganó el campeonato de constructores en 2023?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Red Bull",
+    "piloto": "Max Verstappen"
+  },
+  {
+    "question": "¿Pierre Gasly ganó su primera carrera en Monza 2020?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "AlphaTauri",
+    "piloto": "Pierre Gasly"
+  },
+  {
+    "question": "¿Carlos Sainz ganó su primera carrera en Silverstone 2022?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Ferrari",
+    "piloto": "Carlos Sainz"
+  },
+  {
+    "question": "¿Lewis Hamilton ha corrido toda su carrera para Mercedes?",
+    "answer": false,
+    "nivel": "principiante",
+    "equipo": "Mercedes",
+    "piloto": "Lewis Hamilton"
+  },
+  {
+    "question": "¿Sebastian Vettel ganó su último campeonato con Red Bull en 2013?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Red Bull",
+    "piloto": "Sebastian Vettel"
+  },
+  {
+    "question": "¿Valtteri Bottas logró una pole position con Alfa Romeo?",
+    "answer": false,
+    "nivel": "avanzado",
+    "equipo": "Alfa Romeo",
+    "piloto": "Valtteri Bottas"
+  },
+  {
+    "question": "¿Lando Norris ganó una carrera en F1 antes de 2024?",
+    "answer": false,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Lando Norris"
+  },
+  {
+    "question": "¿Alexander Albon regresó a la F1 con Williams?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Williams",
+    "piloto": "Alexander Albon"
+  },
+  {
+    "question": "¿Fernando Alonso ha sido campeón con Ferrari?",
+    "answer": false,
+    "nivel": "principiante",
+    "equipo": "Ferrari",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Haas debutó en la F1 en 2016?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Haas",
+    "piloto": "Romain Grosjean"
+  },
+  {
+    "question": "¿Logan Sargeant es el primer piloto estadounidense en la F1 desde 2015?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Williams",
+    "piloto": "Logan Sargeant"
+  },
+  {
+    "question": "¿Oscar Piastri debutó con Alpine en 2023?",
+    "answer": false,
+    "nivel": "avanzado",
+    "equipo": "McLaren",
+    "piloto": "Oscar Piastri"
+  },
+  {
+    "question": "¿Mick Schumacher fue piloto titular en Haas?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Haas",
+    "piloto": "Mick Schumacher"
+  },
+  {
+    "question": "¿Red Bull usó motores Renault en 2018?",
+    "answer": true,
+    "nivel": "experto",
+    "equipo": "Red Bull",
+    "piloto": "Max Verstappen"
+  },
+  {
+    "question": "¿Charles Leclerc debutó en F1 con Alfa Romeo Sauber?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Sauber",
+    "piloto": "Charles Leclerc"
+  },
+  {
+    "question": "¿Jenson Button ganó una carrera en 2016?",
+    "answer": false,
+    "nivel": "experto",
+    "equipo": "McLaren",
+    "piloto": "Jenson Button"
+  },
+  {
+    "question": "¿Lewis Hamilton ha ganado más de 100 carreras?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Mercedes",
+    "piloto": "Lewis Hamilton"
+  },
+  {
+    "question": "¿Mercedes dominó la era híbrida desde 2014 hasta 2020?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Mercedes",
+    "piloto": "Lewis Hamilton"
+  },
+  {
+    "question": "¿Yuki Tsunoda debutó en F1 en 2021?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "AlphaTauri",
+    "piloto": "Yuki Tsunoda"
+  },
+  {
+    "question": "¿Ferrari ganó una carrera en 2020?",
+    "answer": false,
+    "nivel": "avanzado",
+    "equipo": "Ferrari",
+    "piloto": "Sebastian Vettel"
+  },
+  {
+    "question": "¿Max Verstappen ha logrado poles en más de 10 circuitos distintos?",
+    "answer": true,
+    "nivel": "experto",
+    "equipo": "Red Bull",
+    "piloto": "Max Verstappen"
+  },
+  {
+    "question": "¿Romain Grosjean tuvo un accidente grave en Bahréin 2020?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Haas",
+    "piloto": "Romain Grosjean"
+  },
+  {
+    "question": "¿Alpine es el sucesor directo de Renault F1?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Alpine",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Kevin Magnussen consiguió una pole con Haas en 2022?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Haas",
+    "piloto": "Kevin Magnussen"
+  },
+  {
+    "question": "¿Sebastian Vettel ganó carreras con Ferrari?",
+    "answer": true,
+    "nivel": "principiante",
+    "equipo": "Ferrari",
+    "piloto": "Sebastian Vettel"
+  },
+  {
+    "question": "¿McLaren usó motores Honda en 2022?",
+    "answer": false,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Lando Norris"
+  },
+  {
+    "question": "¿Daniel Ricciardo corrió para Renault?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Renault",
+    "piloto": "Daniel Ricciardo"
+  },
+  {
+    "question": "¿Nico Hülkenberg ha subido al podio en F1?",
+    "answer": false,
+    "nivel": "avanzado",
+    "equipo": "Force India",
+    "piloto": "Nico Hülkenberg"
+  },
+  {
+    "question": "¿Lewis Hamilton ha ganado una carrera en cada temporada desde su debut hasta 2023?",
+    "answer": false,
+    "nivel": "experto",
+    "equipo": "Mercedes",
+    "piloto": "Lewis Hamilton"
+  },
+  {
+    "question": "¿Max Verstappen ha logrado un Grand Slam en F1?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Red Bull",
+    "piloto": "Max Verstappen"
+  },
+  {
+    "question": "¿Valtteri Bottas ganó carreras con Mercedes?",
+    "answer": true,
+    "nivel": "principiante",
+    "equipo": "Mercedes",
+    "piloto": "Valtteri Bottas"
+  },
+  {
+    "question": "¿Esteban Ocon ganó una carrera con Alpine?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Alpine",
+    "piloto": "Esteban Ocon"
+  },
+  {
+    "question": "¿Williams ganó una carrera entre 2014 y 2024?",
+    "answer": false,
+    "nivel": "avanzado",
+    "equipo": "Williams",
+    "piloto": "George Russell"
+  },
+  {
+    "question": "¿Red Bull usó motores Honda a partir de 2019?",
+    "answer": false,
+    "nivel": "experto",
+    "equipo": "Red Bull",
+    "piloto": "Max Verstappen"
+  },
+  {
+    "question": "¿Carlos Sainz ha logrado más poles que victorias?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Ferrari",
+    "piloto": "Carlos Sainz"
+  },
+  {
+    "question": "¿Lance Stroll ha logrado una pole position en Turquía?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Racing Point",
+    "piloto": "Lance Stroll"
+  },
+  {
+    "question": "¿Fernando Alonso ha corrido en la IndyCar y WEC además de F1?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Toyota (WEC)",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Max Verstappen debutó en la F1 con Toro Rosso?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Toro Rosso",
+    "piloto": "Max Verstappen"
+  },
+  {
+    "question": "¿Fernando Alonso ganó su primer campeonato de F1 con Renault?",
+    "answer": true,
+    "nivel": "principiante",
+    "equipo": "Renault",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Fernando Alonso corrió para Ferrari entre 2010 y 2014?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Ferrari",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Fernando Alonso ganó una carrera con McLaren en su regreso en 2015?",
+    "answer": false,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Fernando Alonso ha ganado más de 30 carreras en F1?",
+    "answer": false,
+    "nivel": "intermedio",
+    "equipo": "Renault",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Fernando Alonso volvió a subirse al podio en F1 con Aston Martin en 2023?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Aston Martin",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Fernando Alonso es el piloto con más salidas en la historia de la F1?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Aston Martin",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Fernando Alonso ha ganado las 24 Horas de Le Mans?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Toyota (WEC)",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Fernando Alonso logró una pole position en 2023?",
+    "answer": false,
+    "nivel": "avanzado",
+    "equipo": "Aston Martin",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Fernando Alonso ganó una carrera con Aston Martin en 2023?",
+    "answer": false,
+    "nivel": "intermedio",
+    "equipo": "Aston Martin",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Fernando Alonso debutó en la Fórmula 1 con el equipo Minardi?",
+    "answer": true,
+    "nivel": "experto",
+    "equipo": "Minardi",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿McLaren ganó una carrera en la temporada 2025 de F1?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Lando Norris"
+  },
+  {
+    "question": "¿Oscar Piastri logró su primera pole position en 2025 con McLaren?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "McLaren",
+    "piloto": "Oscar Piastri"
+  },
+  {
+    "question": "¿Red Bull presentó un nuevo patrocinador principal en 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Red Bull",
+    "piloto": "Max Verstappen"
+  },
+  {
+    "question": "¿Fernando Alonso anunció su retiro definitivo de la F1 en 2025?",
+    "answer": false,
+    "nivel": "avanzado",
+    "equipo": "Aston Martin",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Lewis Hamilton consiguió su victoria número 105 en 2025?",
+    "answer": false,
+    "nivel": "experto",
+    "equipo": "Mercedes",
+    "piloto": "Lewis Hamilton"
+  },
+  {
+    "question": "¿McLaren terminó tercera en el campeonato de constructores en 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Lando Norris"
+  },
+  {
+    "question": "¿Carlos Sainz fichó por Audi F1 Team en 2025?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Audi",
+    "piloto": "Carlos Sainz"
+  },
+  {
+    "question": "¿Audi debutó como equipo oficial en la F1 en 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Audi",
+    "piloto": "Nico Hülkenberg"
+  },
+  {
+    "question": "¿Williams logró un podio en la temporada 2025?",
+    "answer": false,
+    "nivel": "intermedio",
+    "equipo": "Williams",
+    "piloto": "Alex Albon"
+  },
+  {
+    "question": "¿Lando Norris ganó el Gran Premio de Gran Bretaña en 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Lando Norris"
+  },
+  {
+    "question": "¿Oscar Piastri logró su primera victoria en F1 en 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Oscar Piastri"
+  },
+  {
+    "question": "¿Max Verstappen ganó el Gran Premio de Japón en 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Red Bull",
+    "piloto": "Max Verstappen"
+  },
+  {
+    "question": "¿Lewis Hamilton terminó la temporada 2025 en el podio del campeonato?",
+    "answer": false,
+    "nivel": "intermedio",
+    "equipo": "Mercedes",
+    "piloto": "Lewis Hamilton"
+  },
+  {
+    "question": "¿Oscar Piastri logró su primer podio en F1 en 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Oscar Piastri"
+  },
+  {
+    "question": "¿Lando Norris terminó segundo en el campeonato de pilotos en 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Lando Norris"
+  },
+  {
+    "question": "¿Max Verstappen ganó el Gran Premio de Estados Unidos en 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Red Bull",
+    "piloto": "Max Verstappen"
+  },
+  {
+    "question": "¿Oscar Piastri ha logrado ocho podios consecutivos con McLaren en la temporada 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Oscar Piastri"
+  },
+  {
+    "question": "¿Lando Norris ganó el Gran Premio de Mónaco en 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Lando Norris"
+  },
+  {
+    "question": "¿McLaren logró un doblete (1-2) en el Gran Premio de España 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Oscar Piastri"
+  },
+  {
+    "question": "¿Lewis Hamilton fichó por Ferrari para la temporada 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Ferrari",
+    "piloto": "Lewis Hamilton"
+  },
+  {
+    "question": "¿Carlos Sainz Jr. es piloto de Williams en 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Williams",
+    "piloto": "Carlos Sainz Jr."
+  },
+  {
+    "question": "¿Andrea Kimi Antonelli debutó en Fórmula 1 con Mercedes en 2025?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Mercedes",
+    "piloto": "Andrea Kimi Antonelli"
+  },
+  {
+    "question": "¿Isack Hadjar es piloto titular de Racing Bulls en 2025?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Racing Bulls",
+    "piloto": "Isack Hadjar"
+  },
+  {
+    "question": "¿Oliver Bearman debutó como piloto titular en Haas en 2025?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Haas",
+    "piloto": "Oliver Bearman"
+  },
+  {
+    "question": "¿Gabriel Bortoleto es el único piloto latinoamericano en la parrilla de F1 en 2025?",
+    "answer": true,
+    "nivel": "avanzado",
+    "equipo": "Sauber",
+    "piloto": "Gabriel Bortoleto"
+  },
+  {
+    "question": "¿Fernando Alonso logró sus primeros puntos de la temporada 2025 en el Gran Premio de España?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Aston Martin",
+    "piloto": "Fernando Alonso"
+  },
+  {
+    "question": "¿Audi F1 Team debutó con Nico Hülkenberg y Carlos Sainz Jr. en 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Audi",
+    "piloto": "Nico Hülkenberg"
+  },
+  {
+    "question": "¿Lando Norris logró su primera victoria de la temporada 2025 en el Gran Premio de Australia?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Lando Norris"
+  },
+  {
+    "question": "¿Oscar Piastri terminó segundo en el Gran Premio de Italia 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Oscar Piastri"
+  },
+  {
+    "question": "¿Audi F1 Team logró su primer podio en el Gran Premio de Italia 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "Audi",
+    "piloto": "Nico Hülkenberg"
+  },
+  {
+    "question": "¿Lando Norris logró su primera pole position en el Gran Premio de Canadá 2025?",
+    "answer": true,
+    "nivel": "intermedio",
+    "equipo": "McLaren",
+    "piloto": "Lando Norris"
+  }
 ]

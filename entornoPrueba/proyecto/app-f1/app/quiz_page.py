@@ -15,7 +15,34 @@ class QuizPage(ctk.CTkFrame):
 
     def load_questions(self):
         with open("data/quiz_data.json", "r") as f:
-            self.questions = json.load(f)
+            all_questions = json.load(f)
+        users = SessionManager.load_users()
+        user_data = users.get(self.username, {})
+        nivel = user_data.get("nivel")
+        equipo = user_data.get("equipo_favorito")
+        piloto = user_data.get("piloto_favorito")
+
+        # Filtrar preguntas que coincidan con al menos uno de los criterios
+        filtered = [
+            q for q in all_questions
+            if (q.get("nivel") == nivel or
+                q.get("equipo") == equipo or
+                q.get("piloto") == piloto)
+        ]
+
+        # Barajar las preguntas filtradas
+        random.shuffle(filtered)
+
+        # Seleccionar hasta 10 preguntas filtradas
+        num_preguntas = min(10, len(filtered))
+        self.questions = filtered[:num_preguntas]
+
+        # Si hay menos de 10, completar con preguntas aleatorias que no estén ya incluidas
+        if len(self.questions) < 10:
+            restantes = [q for q in all_questions if q not in self.questions]
+            random.shuffle(restantes)
+            self.questions += restantes[:10 - len(self.questions)]
+
         random.shuffle(self.questions)
 
     def show_question(self):
