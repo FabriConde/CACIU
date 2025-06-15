@@ -18,7 +18,6 @@ class ScoreQuizPage(BasePage):
 
         ctk.CTkLabel(self.content, text="Resumen de Quizzes").pack(pady=10)
         if historial:
-            # Calcular media sobre 10
             media = sum((item["puntos"] / item["total"]) * 10 for item in historial) / total_intentos
             media_redondeada = round(media, 2)
             ctk.CTkLabel(
@@ -26,8 +25,7 @@ class ScoreQuizPage(BasePage):
                 text=f"Media de puntuación: {media_redondeada} / 10"
             ).pack(pady=10)
 
-            # Mostrar estrellas (de 1 a 5)
-            estrellas = int(round(media / 2))  # 10/2 = 5 estrellas
+            estrellas = int(round(media / 2))
             estrellas_str = "★" * estrellas + "☆" * (5 - estrellas)
             ctk.CTkLabel(
                 self.content,

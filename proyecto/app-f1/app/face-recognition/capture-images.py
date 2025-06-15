@@ -5,13 +5,11 @@ import sys
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 cam = cv2.VideoCapture(0)
 
-# Si se pasa un argumento, úsalo como ID, si no, pide por consola
 if len(sys.argv) > 1:
     face_id = sys.argv[1]
 else:
     face_id = input('\nIngrese un ID numérico del usuario y presione ENTER ==> ')
 
-# Ruta absoluta para guardar las imágenes
 dataset_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dataset")
 os.makedirs(dataset_dir, exist_ok=True)
 

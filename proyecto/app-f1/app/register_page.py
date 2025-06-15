@@ -7,30 +7,24 @@ class RegisterPage(BasePage):
         super().__init__(master)
         self.master = master
 
-        # Título
         self.title_label = ctk.CTkLabel(self.content, text="Registro de Usuario", font=("Arial", 18, "bold"))
         self.title_label.pack(pady=(10, 10))
 
-        # Usuario
         self.username_entry = ctk.CTkEntry(self.content, placeholder_text="Usuario", width=180)
         self.username_entry.pack(pady=5)
 
-        # Contraseña
         self.password_entry = ctk.CTkEntry(self.content, placeholder_text="Contraseña", show="*", width=180)
         self.password_entry.pack(pady=5)
 
-        # Edad
         self.age_entry = ctk.CTkEntry(self.content, placeholder_text="Edad", width=180)
         self.age_entry.pack(pady=5)
         vcmd = (self.content.register(self.validate_number), "%P")
         self.age_entry.configure(validate="key", validatecommand=vcmd)
 
-        # Nivel
         self.level_option = ctk.CTkOptionMenu(self.content, values=["Principiante", "Intermedio", "Avanzado", "Experto"], width=180)
         self.level_option.set("Principiante")
         self.level_option.pack(pady=5)
 
-        # Equipo favorito
         self.team_option = ctk.CTkOptionMenu(
             self.content,
             values=[
@@ -43,7 +37,6 @@ class RegisterPage(BasePage):
         self.team_option.set("Red Bull")
         self.team_option.pack(pady=5)
 
-        # Piloto favorito
         self.driver_option = ctk.CTkOptionMenu(
             self.content,
             values=[
@@ -58,14 +51,12 @@ class RegisterPage(BasePage):
         )
         self.driver_option.set("Max Verstappen")
         self.driver_option.pack(pady=5)
-
-        # Botones
+        
         self.register_btn = ctk.CTkButton(self.content, text="Registrar", command=self.register, width=180, fg_color="#1abc9c", hover_color="#16a085")
         self.register_btn.pack(pady=(10, 5))
         self.back_btn = ctk.CTkButton(self.content, text="Volver", command=self.go_back, width=180, fg_color="#e64467", hover_color="#aa324c")
         self.back_btn.pack(pady=5)
 
-        # Mensaje
         self.message_label = ctk.CTkLabel(self.content, text="", text_color="red")
         self.message_label.pack(pady=(8, 0))
 

@@ -32,7 +32,6 @@ class QuizPage(BasePage):
         total = len(self.questions)
         if self.index < total:
             q = self.questions[self.index]
-            # Mostrar número de pregunta
             ctk.CTkLabel(self.content, text=f"Pregunta {self.index + 1} de {total}", font=("Arial", 14, "bold")).pack(pady=(10, 5))
             self.label = ctk.CTkLabel(self.content, text=q["question"], font=("Arial", 14))
             self.label.pack(pady=20)

@@ -32,7 +32,7 @@ class LoginPage(BasePage):
             return
         if SessionManager.login(user, pwd):
             self.message_label.configure(text="Inicio de sesión exitoso.", text_color="green")
-            SessionManager.save_session(user)  # Guardar sesión
+            SessionManager.save_session(user)
             self.master.switch_frame(MainPage, user)
         else:
             self.message_label.configure(text="Usuario o contraseña incorrectos.", text_color="red")

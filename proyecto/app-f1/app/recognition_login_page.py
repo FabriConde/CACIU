@@ -53,7 +53,7 @@ class RecognitionLoginPage(BasePage):
             for (x, y, w, h) in faces:
                 id, confidence = recognizer.predict(gray[y:y+h, x:x+w])
                 if confidence < 70:
-                    found_user = names[id]  # usuario reconocido
+                    found_user = names[id]
                     break
 
             cv2.imshow("Reconocimiento Facial (Presiona Q para salir)", img)
@@ -67,9 +67,8 @@ class RecognitionLoginPage(BasePage):
 
         if found_user:
             SessionManager.save_session(found_user)
-            # Guarda el nombre y cambia de frame, pero NO modifiques más widgets después
             self.master.after(0, lambda: self.master.switch_frame(MainPage, found_user))
-            return  # <-- Sal de la función inmediatamente
+            return 
         else:
             self.message_label.configure(text="No se reconoció ningún rostro.", text_color="red")
 

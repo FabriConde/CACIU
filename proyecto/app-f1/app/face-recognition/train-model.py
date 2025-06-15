@@ -14,7 +14,7 @@ def get_images_and_labels(path):
     ids = []
 
     for image_path in image_paths:
-        PIL_img = Image.open(image_path).convert('L')  # escala de grises
+        PIL_img = Image.open(image_path).convert('L')
         img_numpy = np.array(PIL_img, 'uint8')
         id = int(os.path.split(image_path)[-1].split(".")[1])
         faces = detector.detectMultiScale(img_numpy)

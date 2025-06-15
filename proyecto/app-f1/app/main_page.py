@@ -18,7 +18,6 @@ class MainPage(BasePage):
         ctk.CTkButton(self.content, text="Realidad Aumentada", command=self.launch_ar).pack(pady=10)
         ctk.CTkButton(self.content, text="Quiz F1", command=self.open_quiz).pack(pady=10)
         ctk.CTkButton(self.content, text="Puntuación Quiz", command=self.open_scoreQuiz).pack(pady=10)
-        # Botón para registrar reconocimiento facial
         ctk.CTkButton(
             self.content,
             text="Registrar Reconocimiento Facial",
@@ -46,14 +45,11 @@ class MainPage(BasePage):
         self.master.switch_frame(ScoreQuizPage, self.username)
 
     def register_face(self):
-        # Recupera el ID numérico del usuario
         users = SessionManager.load_users()
         user_data = users.get(self.username)
         if user_data and "id" in user_data:
             user_id = user_data["id"]
-            # Captura imágenes
             subprocess.run([sys.executable, "app/face-recognition/capture-images.py", str(user_id)])
-            # Entrena el modelo automáticamente después de capturar
             subprocess.run([sys.executable, "app/face-recognition/train-model.py"])
         else:
             print("No se encontró el ID del usuario.")

@@ -159,7 +159,6 @@ async def escuchar(store, cola):
 
 
 def main():
-    # Buscar cámara
     cam = None
     for i in range(5):
         cap = cv2.VideoCapture(i, cv2.CAP_DSHOW)
@@ -217,7 +216,6 @@ def main():
         # Salir si se pulsa ESC o si se cierra la ventana
         if cv2.waitKey(1) & 0xFF == 27 or cv2.getWindowProperty("Realidad Aumentada", cv2.WND_PROP_VISIBLE) < 1:
             break
-        # Procesar mensajes de la cola
         try:
             msg = cola.get_nowait()
             asyncio.run(update(estado, msg))

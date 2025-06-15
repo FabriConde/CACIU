@@ -44,7 +44,6 @@ class SessionManager:
     @classmethod
     def register(cls, username, password, edad, nivel, equipo_favorito, piloto_favorito):
         users = cls.load_users()
-        # Asigna un ID numérico único
         if users:
             max_id = max([u.get("id", 0) for u in users.values()])
         else:
@@ -95,7 +94,6 @@ class SessionManager:
                 return None
         timestamp = session_data.get("timestamp", 0)
         now = datetime.datetime.now().timestamp()
-        # 5 minutos = 300 segundos
         if now - timestamp <= 300:
             return session_data.get("username")
         return None
